@@ -1,1 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+.pageWrapperLight {
+  background-color: hsl(0, 0%, 98%);
+  height: 100vh;
+}
+
+.pageWrapperDark {
+  background-color: hsl(0, 0%, 98%);
+  height: 100vh;
+}
