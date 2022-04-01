@@ -1,0 +1,82 @@
+.taskWrapperLight {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    border-bottom: 1px solid #40425A;
+    flex-shrink: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+.taskWrapperDark {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    border-bottom: 1px solid #40425A;
+    flex-shrink: 0;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+.notDoneTaskImageDiv {
+    display: none;
+}
+
+.doneImage {
+    max-width: 15px;
+}
+
+.doneButtonLight {
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.taskNameLight {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.taskNameDark {
+    cursor: pointer;
+}
+
+.taskButtonsLight {
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.taskButtonsDark {
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.taskEditDeleteLight {
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.taskEditDeleteDark {
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.taskEditDeleteLight img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.taskEditDeleteDark img {
+    width: 20px;
+    cursor: pointer;
+}

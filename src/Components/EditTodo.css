@@ -1,0 +1,49 @@
+.editInputLight {
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid black;
+    height: 50%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em;
+}
+
+.editInputLight:focus {
+    outline: none;
+}
+
+.editInputDark {
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid #fff;
+    height: 50%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #25273D;
+}
+
+.editInputDark:focus {
+    outline: none;
+}
+
+.saveButtonLight {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    margin-left: auto;
+}
+
+.saveButtonLight img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.saveButtonDark {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    margin-left: auto;
+}
+
+.saveButtonDark img {
+    width: 20px;
+    cursor: pointer;
+}
