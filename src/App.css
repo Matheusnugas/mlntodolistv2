@@ -5,25 +5,159 @@
 }
 
 .pageWrapperLight {
-  background-color: hsl(0, 0%, 98%);
+  background-color: #FAFAFA;
   height: 100vh;
   background-image: url(./images/bg-desktop-light.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 45%;
+  background-size: 100% 35%;
   background-position-y: top;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.4s;;
 }
 
 .pageWrapperDark {
-  background-color: hsl(235, 21%, 11%);
+  background-color: #181824;
   height: 100vh;
   background-image: url(./images/bg-desktop-dark.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 45%;
+  background-size: 100% 35%;
   background-position-y: top;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.4s;
+}
+
+.todoContainerLight {
+  height: 80%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 5%;
+  transition: 0.4s;
+  padding: 1.1em;
+}
+
+.todoContainerDark {
+  height: 80%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5%;
+  /* justify-content: center; */
+  transition: 0.4s;
+  padding: 1.1em;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.modeChanger {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  cursor: pointer;
+}
+
+nav h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+  letter-spacing: 0.3em;
+  font-size: 2.5em;
+}
+
+.inputContainerLight {
+  width: 100%;
+  height: 4em;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.4s;
+}
+
+.inputContainerDark {
+  width: 100%;
+  height: 4em;
+  border-radius: 10px;
+  background-color: #25283C;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.4s;
+}
+
+.addTodoInputLight {
+  width: 70%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.8em;
+  text-indent: 5%;
+  transition: 0.4s;
+}
+
+.addTodoInputDark {
+  width: 70%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: #25283C;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.8em;
+  color: #fff;
+  text-indent: 5%;
+  transition: 0.4s;
+}
+
+.addTodoInputDark:focus, .addTodoInputLight:focus {
+  outline: none;
+}
+
+.addButton {
+  width: 29%;
+  height: 87%;
+  border: none;
+  background-color: #2C60FA;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.1em;
+  transition: 0.2s;
+  cursor: pointer;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.addButton:hover {
+  background-color: #2C88FA;
+}
+
+.taskContainerLight {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+.taskContainerDark {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #25283C;
+  transition: 0.4s;
 }
