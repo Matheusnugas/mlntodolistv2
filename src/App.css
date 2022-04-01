@@ -4,216 +4,436 @@
   padding: 0;
 }
 
-.pageWrapperLight {
-  background-color: #FAFAFA;
-  height: 100vh;
-  background-image: url(./images/bg-desktop-light.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 35%;
-  background-position-y: top;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.4s;;
+@media (min-width:700px) {
+  .pageWrapperLight {
+    background-color: #FAFAFA;
+    height: 100vh;
+    background-image: url(./images/bg-desktop-light.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 35%;
+    background-position-y: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;;
+  }
+  
+  .pageWrapperDark {
+    background-color: #181824;
+    height: 100vh;
+    background-image: url(./images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 35%;
+    background-position-y: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+  }
+  
+  .todoContainerLight {
+    height: 80%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 5%;
+    transition: 0.4s;
+    padding: 1.1em;
+  }
+  
+  .todoContainerDark {
+    height: 80%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    /* justify-content: center; */
+    transition: 0.4s;
+    padding: 1.1em;
+  }
+  
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .modeChanger {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    cursor: pointer;
+  }
+  
+  nav h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    letter-spacing: 0.3em;
+    font-size: 2.5em;
+  }
+  
+  .inputContainerLight {
+    width: 100%;
+    height: 4em;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.4s;
+  }
+  
+  .inputContainerDark {
+    width: 100%;
+    height: 4em;
+    border-radius: 10px;
+    background-color: #25283C;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.4s;
+  }
+  
+  .addTodoInputLight {
+    width: 70%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8em;
+    text-indent: 5%;
+    transition: 0.4s;
+  }
+  
+  .addTodoInputDark {
+    width: 70%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #25283C;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8em;
+    color: #fff;
+    text-indent: 5%;
+    transition: 0.4s;
+  }
+  
+  .addTodoInputDark:focus, .addTodoInputLight:focus {
+    outline: none;
+  }
+  
+  .addButton {
+    width: 29%;
+    height: 87%;
+    border: none;
+    background-color: #2C60FA;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1em;
+    transition: 0.2s;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .addButton:hover {
+    background-color: #2C88FA;
+  }
+  
+  .taskContainerLight {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    transition: 0.4s;
+    overflow-y: scroll;
+    padding: 10px;
+  }
+  
+  .taskContainerDark {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #25283C;
+    transition: 0.4s;
+    overflow-y: scroll;
+    padding: 10px;
+  }
+  
+  .functionalitiesDivLight {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  
+  .functionalitiesDivDark {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    color: #fff;
+  }
+  
+  .funcButtonLight {
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em;
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: rgba(214,71,155,1);
+    cursor: pointer;
+  }
+  
+  .funcButtonDark {
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    font-size: 1.1em;
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: rgba(214,71,155,1);
+    cursor: pointer;
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px; 
+    left:-100px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(214,71,155,1) 28%, rgba(9,9,121,1) 69%, rgba(0,212,255,1) 100%);
+  
+    border-radius: 10px;
+  }
 }
 
-.pageWrapperDark {
-  background-color: #181824;
-  height: 100vh;
-  background-image: url(./images/bg-desktop-dark.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 35%;
-  background-position-y: top;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.4s;
-}
-
-.todoContainerLight {
-  height: 80%;
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-  gap: 5%;
-  transition: 0.4s;
-  padding: 1.1em;
-}
-
-.todoContainerDark {
-  height: 80%;
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5%;
-  /* justify-content: center; */
-  transition: 0.4s;
-  padding: 1.1em;
-}
-
-nav {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.modeChanger {
-  background-color: rgba(0,0,0,0);
-  border: none;
-  cursor: pointer;
-}
-
-nav h1 {
-  font-family: 'Josefin Sans', sans-serif;
-  color: #fff;
-  letter-spacing: 0.3em;
-  font-size: 2.5em;
-}
-
-.inputContainerLight {
-  width: 100%;
-  height: 4em;
-  background-color: #fff;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transition: 0.4s;
-}
-
-.inputContainerDark {
-  width: 100%;
-  height: 4em;
-  border-radius: 10px;
-  background-color: #25283C;
-  display: flex;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transition: 0.4s;
-}
-
-.addTodoInputLight {
-  width: 70%;
-  height: 100%;
-  border: none;
-  border-radius: 10px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.8em;
-  text-indent: 5%;
-  transition: 0.4s;
-}
-
-.addTodoInputDark {
-  width: 70%;
-  height: 100%;
-  border: none;
-  border-radius: 10px;
-  background-color: #25283C;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.8em;
-  color: #fff;
-  text-indent: 5%;
-  transition: 0.4s;
-}
-
-.addTodoInputDark:focus, .addTodoInputLight:focus {
-  outline: none;
-}
-
-.addButton {
-  width: 29%;
-  height: 87%;
-  border: none;
-  background-color: #2C60FA;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 1.1em;
-  transition: 0.2s;
-  cursor: pointer;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-.addButton:hover {
-  background-color: #2C88FA;
-}
-
-.taskContainerLight {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: #fff;
-  transition: 0.4s;
-  overflow-y: scroll;
-  padding: 10px;
-}
-
-.taskContainerDark {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: #25283C;
-  transition: 0.4s;
-  overflow-y: scroll;
-  padding: 10px;
-}
-
-.functionalitiesDivLight {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-}
-
-.functionalitiesDivDark {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  color: #fff;
-}
-
-.funcButtonLight {
-  background-color: rgba(0, 0, 0, 0);
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.1em;
-  border: none;
-  text-decoration: underline;
-  text-decoration-color: rgba(214,71,155,1);
-  cursor: pointer;
-}
-
-.funcButtonDark {
-  background-color: rgba(0, 0, 0, 0);
-  font-family: 'Josefin Sans', sans-serif;
-  color: #fff;
-  font-size: 1.1em;
-  border: none;
-  text-decoration: underline;
-  text-decoration-color: rgba(214,71,155,1);
-  cursor: pointer;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 8px; 
-  left:-100px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: rgba(0,0,0,0);
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, rgba(214,71,155,1) 28%, rgba(9,9,121,1) 69%, rgba(0,212,255,1) 100%);
-
-  border-radius: 10px;
+@media (max-width:700px) {
+  .pageWrapperLight {
+    background-color: #FAFAFA;
+    height: 100vh;
+    background-image: url(./images/bg-desktop-light.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 35%;
+    background-position-y: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;;
+  }
+  
+  .pageWrapperDark {
+    background-color: #181824;
+    height: 100vh;
+    background-image: url(./images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 35%;
+    background-position-y: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+  }
+  
+  .todoContainerLight {
+    height: 80%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    transition: 0.4s;
+    padding: 1.1em;
+  }
+  
+  .todoContainerDark {
+    height: 80%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    /* justify-content: center; */
+    transition: 0.4s;
+    padding: 1.1em;
+  }
+  
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .modeChanger {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    cursor: pointer;
+  }
+  
+  nav h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    letter-spacing: 0.3em;
+    font-size: 2.5em;
+  }
+  
+  .inputContainerLight {
+    width: 100%;
+    height: 4em;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.4s;
+  }
+  
+  .inputContainerDark {
+    width: 100%;
+    height: 4em;
+    border-radius: 10px;
+    background-color: #25283C;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.4s;
+  }
+  
+  .addTodoInputLight {
+    width: 70%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8em;
+    text-indent: 5%;
+    transition: 0.4s;
+  }
+  
+  .addTodoInputDark {
+    width: 70%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #25283C;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8em;
+    color: #fff;
+    text-indent: 5%;
+    transition: 0.4s;
+  }
+  
+  .addTodoInputDark:focus, .addTodoInputLight:focus {
+    outline: none;
+  }
+  
+  .addButton {
+    width: 29%;
+    height: 87%;
+    border: none;
+    background-color: #2C60FA;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 0.8em;
+    transition: 0.2s;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .addButton:hover {
+    background-color: #2C88FA;
+  }
+  
+  .taskContainerLight {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    transition: 0.4s;
+    overflow-y: scroll;
+    padding: 10px;
+  }
+  
+  .taskContainerDark {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #25283C;
+    transition: 0.4s;
+    overflow-y: scroll;
+    padding: 10px;
+  }
+  
+  .functionalitiesDivLight {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 10%;
+  }
+  
+  .functionalitiesDivDark {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: #fff;
+    gap: 10%;
+  }
+  
+  .funcButtonLight {
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em;
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: rgba(214,71,155,1);
+    cursor: pointer;
+  }
+  
+  .funcButtonDark {
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    font-size: 1.1em;
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: rgba(214,71,155,1);
+    cursor: pointer;
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px; 
+    left:-100px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(214,71,155,1) 28%, rgba(9,9,121,1) 69%, rgba(0,212,255,1) 100%);
+    border-radius: 10px;
+  }
 }
