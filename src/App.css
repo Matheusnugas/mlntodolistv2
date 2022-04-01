@@ -7,9 +7,23 @@
 .pageWrapperLight {
   background-color: hsl(0, 0%, 98%);
   height: 100vh;
+  background-image: url(./images/bg-desktop-light.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 45%;
+  background-position-y: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pageWrapperDark {
-  background-color: hsl(0, 0%, 98%);
+  background-color: hsl(235, 21%, 11%);
   height: 100vh;
+  background-image: url(./images/bg-desktop-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 45%;
+  background-position-y: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

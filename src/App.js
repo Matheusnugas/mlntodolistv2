@@ -6,10 +6,8 @@ function App() {
   return (
     <div className="App">
       <main className={!darkMode ? "pageWrapperLight" : "pageWrapperDark"}>
-        <nav className={!darkMode ? "navLight" : "navDark"}>
-          <h1>To-do List</h1>
-          <button className="navButton">Dark Mode</button>
-        </nav>
+        <div>
+        </div>
       </main>
     </div>
   );
